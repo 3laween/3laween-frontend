@@ -35,6 +35,5 @@
   },
   "devDependencies": {
     "json-server": "^0.16.1"
-  },
-  "proxy": "app-3laween.herokuapp.com"
+  }
 }
