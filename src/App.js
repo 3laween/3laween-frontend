@@ -13,7 +13,7 @@ const App = (props) => {
 
     const hook = () =>{
         axios
-          .get('http://app-3laween.herokuapp.com/api/notes')
+          .get('https://app-3laween.herokuapp.com/api/notes')
           .then(eventHandler)
     } 
     
@@ -29,7 +29,7 @@ const App = (props) => {
             important: Math.random() > 0.5,
             id: notes.length + 1,
           }
-        axios.post("http://app-3laween.herokuapp.com/api/notes",noteObject).then(response => {
+        axios.post("https://app-3laween.herokuapp.com/api/notes",noteObject).then(response => {
             setNotes(notes.concat(response.data))
             setNewNotes('')
         })
